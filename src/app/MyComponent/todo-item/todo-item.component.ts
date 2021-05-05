@@ -1,4 +1,4 @@
-import { Input, Output, EventEmitter} from '@angular/core';
+import { Input, Output, EventEmitter } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/Todo';
 
@@ -9,7 +9,9 @@ import { Todo } from 'src/app/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
+  @Input() i: number;
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
+  @Output() todoCheckbox: EventEmitter<Todo> = new EventEmitter();
   constructor() {}
 
   ngOnInit(): void {}
@@ -18,7 +20,9 @@ export class TodoItemComponent implements OnInit {
     this.todoDelete.emit(todo);
     console.log('OnClick has been triggered!');
   }
-  onCheckBoxClick(todo){
-    
-  };
+  onCheckBoxClick(todo) {
+    console.log(todo);
+    this.todoCheckbox.emit(todo);
+    console.log(todo);
+  }
 }

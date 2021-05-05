@@ -7,9 +7,10 @@ import { TodosComponent } from './MyComponent/todos/todos.component';
 import { TodoItemComponent } from './MyComponent/todo-item/todo-item.component';
 import { AddTodoComponent } from './MyComponent/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './MyComponent/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent, TodoItemComponent, AddTodoComponent],
+  declarations: [AppComponent, TodosComponent, TodoItemComponent, AddTodoComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
