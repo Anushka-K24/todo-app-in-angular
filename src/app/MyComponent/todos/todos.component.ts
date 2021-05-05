@@ -14,19 +14,19 @@ export class TodosComponent implements OnInit {
       {
         SrNo: 1,
         title: 'To check cowin website',
-        description: 'Something something',
+        desc: 'Something something',
         active: true,
       },
       {
         SrNo: 2,
         title: 'This is title 2',
-        description: 'Something something part 2',
+        desc: 'Something something part 2',
         active: true,
       },
       {
         SrNo: 3,
         title: 'This is title 3',
-        description: 'Something something part 3',
+        desc: 'Something something part 3',
         active: true,
       },
     ];

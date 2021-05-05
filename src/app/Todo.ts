@@ -1,6 +1,6 @@
 export class Todo{
     SrNo: number
     title: string
-    description: string
+    desc: string
     active: boolean
 }
